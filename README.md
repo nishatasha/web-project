@@ -1,6 +1,20 @@
 # web-project
 Tic Tac Toe Game in JavaScript.
-To create this program [Tic Tac Toe Game]. First, you need to create three files, ``` HTML ``` File, ```CSS``` File, and ```JavaScript``` File. After creating these files just paste the following codes into your files. You can also copy the source code files of this game from the given files.
+
+Click [here](https://nishatasha.github.io/web-project/) to have fun!
+
+To create this program [Tic Tac Toe Game] 
+
+First, you need to create three files, ``` HTML ``` File, ```CSS``` File, and ```JavaScript``` File. 
+
+After creating these files just paste those following codes into your files.
+
+For ```HTML```  [index.html](https://github.com/nishatasha/web-project/blob/ebb8b9775a6082e67c494c9fc5ad6e468db8f9dd/index.html)
+
+For ```CSS```  [index.css](https://github.com/nishatasha/web-project/blob/ebb8b9775a6082e67c494c9fc5ad6e468db8f9dd/assets/style/index.css)
+
+For ```JavaScript```
+
 ``` JavaScript
 const selectBox = document.querySelector(".select-box"),
     selectBtnX = selectBox.querySelector(".options .playerX"),
