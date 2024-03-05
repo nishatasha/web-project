@@ -1,19 +1,22 @@
 # web-project
 Tic Tac Toe Game in JavaScript.
+### Demo
 
 Click [here](https://nishatasha.github.io/web-project/) to have fun!
+### Instruction
 
-To create this program [Tic Tac Toe Game] 
+To create this program -> Tic Tac Toe Game 
 
 First, you need to create three files, ``` HTML ``` File, ```CSS``` File, and ```JavaScript``` File. 
 
-After creating these files just paste those following codes into your files.
+After creating these files, just paste these following codes into your files. But make sure to test the program several times after completing
+the codes.
 
-For ```HTML```  [index.html](https://github.com/nishatasha/web-project/blob/ebb8b9775a6082e67c494c9fc5ad6e468db8f9dd/index.html)
+For ```HTML``` = [index.html](https://github.com/nishatasha/web-project/blob/ebb8b9775a6082e67c494c9fc5ad6e468db8f9dd/index.html)
 
-For ```CSS```  [index.css](https://github.com/nishatasha/web-project/blob/ebb8b9775a6082e67c494c9fc5ad6e468db8f9dd/assets/style/index.css)
+For ```CSS``` = [index.css](https://github.com/nishatasha/web-project/blob/ebb8b9775a6082e67c494c9fc5ad6e468db8f9dd/assets/style/index.css)
 
-For ```JavaScript```
+For ```JavaScript``` =
 
 ``` JavaScript
 const selectBox = document.querySelector(".select-box"),
@@ -102,7 +105,9 @@ function checkIdSign(val1, val2, val3, sign) {
 }
 
 function selectWinner() {
-    if(checkIdSign(1,2,3,playerSign) || checkIdSign(4,5,6,playerSign) || checkIdSign(7,8,9,playerSign) || checkIdSign(1,4,7,playerSign) || checkIdSign(2,5,8,playerSign) || checkIdSign(3,6,9,playerSign) || checkIdSign(1,5,9,playerSign) || checkIdSign(3,5,7,playerSign)) {
+    if(checkIdSign(1,2,3,playerSign) || checkIdSign(4,5,6,playerSign) || checkIdSign(7,8,9,playerSign) ||
+       checkIdSign(1,4,7,playerSign) || checkIdSign(2,5,8,playerSign) || checkIdSign(3,6,9,playerSign) ||
+       checkIdSign(1,5,9,playerSign)|| checkIdSign(3,5,7,playerSign)) {
         runBot = false; // stop bot if someone wins
         bot(runBot); // call bot function
         setTimeout(() => {
@@ -111,7 +116,8 @@ function selectWinner() {
         }, 700); // 1s = 1000ms
         wonText.innerHTML = `Player <p>${playerSign}</p> won the game!`; // display winning text
     } else {
-        if(getIdVal(1) != "" && getIdVal(2) != "" && getIdVal(3) != "" && getIdVal(4) != "" && getIdVal(5) != "" && getIdVal(6) != "" && getIdVal(7) != "" && getIdVal(8) != "" && getIdVal(9) != "") {
+        if(getIdVal(1) != "" && getIdVal(2) != "" && getIdVal(3) != "" && getIdVal(4) != "" && getIdVal(5) != "" && getIdVal(6)
+           != "" && getIdVal(7) != "" && getIdVal(8) != "" && getIdVal(9) != "") {
             runBot = false; // stop bot if match is drawn
             bot(runBot); // call bot function
             setTimeout(() => {
